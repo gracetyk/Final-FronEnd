@@ -151,7 +151,7 @@
 
 /*Cards o tarjetas*/
 .text__clientes {
-  margin-top: -25px;
+  margin-top: 20px;
 }
 .tarjetas {
   box-shadow: 2px 2px 6px gray;
@@ -230,6 +230,13 @@
   .buscador > input {
     margin-top: 35px;
   }
+}
+
+@media (max-height: 640px) {
+  .pagina2 {
+    height: 60vh;
+  }
+  
 }
 
 /*(3) Tercera pagina*/
@@ -914,6 +921,7 @@ h3 > span {
   align-items: center;
   justify-content: space-around;
 }
+
 .area > label {
   display: block;
   color: var(--primary);
@@ -927,11 +935,24 @@ h3 > span {
   padding: 15px;
   margin-right: 25px;
 }
+
+.ubicacion > input {
+  height: 50px;
+  margin: 10px 0;
+  border-radius: 7px;
+  border: 2px solid rgba(115, 115, 115, 0.46);
+  padding: 15px;
+  width: 130px;
+  margin-right: 25px;
+}
+
+
 .amoblado,
 .textarea > label {
   display: block;
   color: var(--primary);
   font-weight: 600;
+  
 }
 .textarea > textarea {
   width: 100%;
@@ -947,6 +968,7 @@ h3 > span {
 .selecionar--mueble {
   width: 100%;
   display: inline-block;
+  padding: 5px;
 }
 
 .contenido--form > input,
@@ -975,6 +997,20 @@ textarea {
 }
 input[type="file" i] {
   background: white;
+}
+
+.ubicacion > label {
+  display: block;
+  color: var(--primary);
+  font-weight: 600;
+}
+.ubicacion > input {
+  height: 50px;
+  margin: 15px 0;
+  border-radius: 7px;
+  border: 2px solid rgba(115, 115, 115, 0.46);
+  padding: 15px;
+  margin-right: 25px;
 }
 
 /*Media querys de la pagina 6*/
@@ -1022,6 +1058,10 @@ input[type="file" i] {
   .amoblado {
     width: 140px;
   }
+
+  .ubicacion > input {
+    width: 80px;
+  }
 }
 
 @media (max-width: 424px) {
@@ -1054,6 +1094,10 @@ input[type="file" i] {
   .amoblado {
     width: 100%;
   }
+
+  .ubicacion > input {
+    width: 100%;
+  }
 }
 
 @media (max-width: 357px) {
@@ -1066,4 +1110,60 @@ input[type="file" i] {
   .contenido--form > input {
     font-size: 11px;
   }
+}
+
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+
+.inputfile-box {
+  position: relative;
+}
+
+.inputfile {
+  display: none;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+.file-box {
+  display: inline-block;
+  width: 100%;
+  padding: 35px 40px 5px 182px;
+  box-sizing: border-box;
+  height: 100px;
+  border: 2px solid rgba(115, 115, 115, 0.46);
+  border-radius: 7px;
+  color: var(--secondary-light);
+}
+
+.file-button {
+  background: #BCFFC8;
+  padding: 5px;
+  position: absolute;
+  border: 1px solid;
+  top: 0px;
+  right: 0px;
+}
+
+.img-icon{
+  margin-bottom: 4px;
+  margin-right: 7px;
 }
