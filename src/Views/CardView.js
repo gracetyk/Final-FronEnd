@@ -12,7 +12,13 @@ function Card({price,imageSource,description,pais,ciudad,distrito}) {
     return (
         <Link className="card text-left" to="/pagina5">
         
-            <img src={imageSource} alt="cocina" />
+            <img src={imageSource} alt="cocina" 
+              style={{
+              height: "200px",
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+            />
             <div className="card-body"> 
             <p className="card-text text-secondary">
             S/ {price} x mes

@@ -47,7 +47,7 @@ export default function HeadPag2Service() {
   },[])
   
   return (
-      <section className="pagina2 container ">
+      <section className="pagina2 container-xl ">
         <div className="contenido__buscador col-11">
           <img src={imagenes.img2} />
   
